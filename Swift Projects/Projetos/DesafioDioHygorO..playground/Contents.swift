@@ -1,6 +1,9 @@
 import UIKit
-let name: String = "Steve"
-var secondName: String? = "Jobs"
+let name = "Steve"
+var secondName: String? = "jobs"
 
-var text:String =  "Wozniak"
+print("O nome é \(name) e o sobrenome é \(secondName ?? "Wozniak")")
 
+if let forcedName = secondName {
+    print("O nome completo é \(name) \(forcedName)")
+}
